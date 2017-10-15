@@ -36,6 +36,7 @@ $(document).ready(function() {
 		greenNum = randomNumberForCrystals();
 		yellowNum = randomNumberForCrystals();
 		computerScore = randomNumberForComputer();
+		playerScore = 0;
 		$("#comp-random-num").text(computerScore);
 		$("#score-text").text(playerScore);
 	}
@@ -75,6 +76,7 @@ $(document).ready(function() {
 		} else {
 			$("#score-text").text(playerScore);
 		}
+
 		if (gameOver){
 			displayScore(wins, losses, result);
 			resetValues();
@@ -84,7 +86,7 @@ $(document).ready(function() {
 	}
 
 	function playGame() {
-		displayScore(0, 0, "---");
+		displayScore(0, 0, "   ");
 		resetValues();
 
 		$("#result-text").text = "";

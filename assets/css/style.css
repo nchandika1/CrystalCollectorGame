@@ -2,6 +2,9 @@ body {
 	background-image: url("../images/norwegian_rose.png");
 	width: 980px;
 }
+.clearfix {
+    overflow: auto;
+}
 
 .header-style {
 	background-color: #c5753f;
@@ -15,17 +18,24 @@ body {
 	font-weight: bold;
 }
 
+.random-box, .score-box {
+	height: 100px;
+	margin-bottom: 10px;
+}
 .random-box {
 	background-color: #60c782;
-	height:100px;
 	font-size: x-large;
 	font-weight: bold;
+	float: left;
+	width: 200px;
+	margin-right: 10px;
 }
 
 .score-box {
 	background-color: #58fbfc;
 	color:#61c686;
 	font-weight: bold;
+	width:100px;
 }
 
 .crystal-box {
