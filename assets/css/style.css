@@ -1,0 +1,49 @@
+body {
+	background-image: url("../images/norwegian_rose.png");
+	width: 980px;
+}
+
+.header-style {
+	background-color: #c5753f;
+	color: #ffffff;
+	padding:10px;
+}
+
+.rules-box {
+	background-color: #fae6cc;
+	color: #afcb99;
+	font-weight: bold;
+}
+
+.random-box {
+	background-color: #60c782;
+	height:100px;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+.score-box {
+	background-color: #58fbfc;
+	color:#61c686;
+	font-weight: bold;
+}
+
+.crystal-box {
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin:0 10px 10px 0;
+}
+
+.score-title {
+	background-color: #34a494;
+	color: #ffffff;
+}
+
+.player-score {
+	background-color: #34a494;
+	color: #ffffff;
+	height:100px;
+	font-weight: bold;
+	font-size: x-large;
+}
