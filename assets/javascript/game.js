@@ -15,14 +15,14 @@ $(document).ready(function() {
 
 	function randomNumberForComputer() {
 		/* Random number between 18 and 120 */
-		return (Math.floor(Math.random() * 120) + 18);
+		return (Math.floor(Math.random() * 102) + 18);
 	}
 
 	function displayScore(wins, losses, result) {
 		console.log("Display Score: " + wins + "," + losses + "," + result);
 		$("#wins-text").text(wins);
 		$("#losses-text").text(losses);
-		$("#result-text").text(result);
+		$("#result-text").html(result);
 	}
 
 	function displayComputerScore() {
@@ -36,8 +36,8 @@ $(document).ready(function() {
 		greenNum = randomNumberForCrystals();
 		yellowNum = randomNumberForCrystals();
 		computerScore = randomNumberForComputer();
-		displayComputerScore();
-		playerScore = 0;
+		$("#comp-random-num").text(computerScore);
+		$("#score-text").text(playerScore);
 	}
 
 	function crystalClickFunction (crystalType) {
@@ -79,11 +79,12 @@ $(document).ready(function() {
 			displayScore(wins, losses, result);
 			resetValues();
 			displayComputerScore();
+			$("#score-text").text("0");
 		}
 	}
 
 	function playGame() {
-		displayScore(0, 0, "");
+		displayScore(0, 0, "---");
 		resetValues();
 
 		$("#result-text").text = "";
